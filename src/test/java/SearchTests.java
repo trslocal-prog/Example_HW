@@ -7,7 +7,7 @@ public class SearchTests {
     @Test
     void successfulSearchTest() {
         open("https://www.google.com/");
-        $("[name=q]").setValue("selenide").pressEnter();
+        $("[name=q]").setValue("selenidedsfsfsdfsdfsdfdsfdsfsdfsdfs").pressEnter();
         $("[id=search]").shouldHave(text("https://selenide.org"));
     }
 }
